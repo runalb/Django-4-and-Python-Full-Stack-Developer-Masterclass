@@ -11,7 +11,7 @@ urlpatterns = [
     # /sting_value urls
     path("<str:value>",views.string_view),
     # /urls-with-dashes
-    path("<slug:value>",views.slug_view) ,
+    path("<slug:value>",views.slug_view),
 
 
 
