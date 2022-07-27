@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http.response import HttpResponse
+from django.http.response import HttpResponse, HttpResponseRedirect
 
 # Create your views here.
 
@@ -14,3 +14,9 @@ def int_view(request,value):
 
 def slug_view(request,value):
     return HttpResponse(f"slug: {value}")
+    
+
+# ---- Redirects Basics : ----
+def redirects_view(request):
+    return HttpResponseRedirect("google.com")
+
